@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
 * {
   position: relative;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  transition: all .25s;
 }
 
 :root {
@@ -26,4 +29,12 @@ body {
 body, button, input, textarea {
   font-size: var(--default-text-size);
   font-family: var(--default-font-family);
+}
+
+button:not(:disabled), a {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
 }
